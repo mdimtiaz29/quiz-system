@@ -1,0 +1,14 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Upload extends Model
+{
+    //
+       public function user()
+    {
+        return $this->belongsTo(User::class); // A profile belongs to a user
+    }
+}
